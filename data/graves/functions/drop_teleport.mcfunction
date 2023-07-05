@@ -1,0 +1,2 @@
+execute as @e[tag=graves.item.teleported,distance=..0.75] run data merge entity @s {PickupDelay:0,Invulnerable:1b,NoGravity:0b,Motion:[0.0,0.5,0.0]}
+tp @e[tag=graves.item.teleported,distance=..0.75] @s
