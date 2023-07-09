@@ -13,8 +13,6 @@ execute as @e[tag=graves.interaction.new,limit=1,sort=nearest] store result scor
 execute as @e[tag=graves.item,distance=..5] run data modify entity @e[tag=graves.marker.new,limit=1,sort=nearest] data.Inventory append from entity @s Item
 kill @e[tag=graves.item,distance=..5]
 
-#execute as @e[tag=graves.item,distance=..5] run function graves:loot/teleport
-
 scoreboard players set @e[tag=graves.interaction.new,limit=1,sort=nearest] graves.xp 0
 execute as @e[tag=graves.xp,distance=..5] store result score @s graves.xp run data get entity @s Value
 execute as @e[tag=graves.xp,distance=..5] run scoreboard players operation @e[tag=graves.interaction.new,limit=1,sort=nearest] graves.xp += @s graves.xp
