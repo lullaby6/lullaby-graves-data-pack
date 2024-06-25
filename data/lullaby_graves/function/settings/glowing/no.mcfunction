@@ -1,0 +1,2 @@
+scoreboard players set glowing lullaby_graves.settings 0
+function lullaby_graves:settings
