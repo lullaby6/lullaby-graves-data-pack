@@ -12,6 +12,8 @@ Settings:
 /function graves:settings
 ```
 
+Disable:
+
 ```mcfunction
 /datapack disable "file/graves.zip"
 ```
